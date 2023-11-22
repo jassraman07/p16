@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8" />
+   <title>My Basic Form</title>
+</head>
+<body>
+   <h1 style="text-align:center;">Newsletter Sign-Up</h1>
+   <form name="MyForm" method="Post" action="thankyou.html">
+     <div style="text-align:center;">
+       <input type="text" name="fullname" placeholder="Your name">
+       <input type="text" name="email" placeholder="Your email">
+       <!-- Add maxlength attribute here -->
+       <input type="text" name="phone" placeholder="phone number" maxlength="10">
+       <!-- Ensure the function is called correctly -->
+       <input type="submit" value="Submit" onClick="return validateInputs();">
+     </div>
+   </form>
+   <script src="script.js"></script>
+</body>
+</html>
